@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Check login modules" tests="3" skipped="0" failures="2" errors="0" timestamp="2020-07-14T21:15:20" hostname="DESKTOP-FSDA013" time="11.161">
+  <properties/>
+  <testcase name="test invalid username and password" classname="Check login modules" time="8.933">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at login.mapper.LoginMapper.setStatus(LoginMapper.java:52)
+	at login.step.LoginStep.iShouldReceiveAnInvalidMessage(LoginStep.java:47)
+	at ✽.I should receive an invalid message(file:///C:/Users/jessi/Desktop/Demo/src/test/resources/feature/01_Login.feature:7)
+</failure>
+  </testcase>
+  <testcase name="test reset button" classname="Check login modules" time="0.074">
+    <failure message="org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}&#10;  (Session info: chrome=83.0.4103.116): User or Password is not valid&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-FSDA013', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\jessi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52819}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 09675b13b960194ea1cd3b0f3c375950&#10;*** Element info: {Using=name, value=uid}" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=83.0.4103.116): User or Password is not valid
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FSDA013', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\jessi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52819}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 09675b13b960194ea1cd3b0f3c375950
+*** Element info: {Using=name, value=uid}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.sendKeys(Unknown Source)
+	at login.page.LoginPage.wrongLogin(LoginPage.java:92)
+	at login.step.LoginStep.iEnterIncorrectUsernameAndPassword(LoginStep.java:66)
+	at ✽.I enter incorrect username and password(file:///C:/Users/jessi/Desktop/Demo/src/test/resources/feature/01_Login.feature:11)
+</failure>
+  </testcase>
+  <testcase name="test valid username and password" classname="Check login modules" time="2.154"/>
+  <system-out><![CDATA[Reading Excel sheet
+Reading Excel sheet
+Reading Excel sheet
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 31536
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 14, 2020 2:15:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Cleaning up unclosed ZipFile for archive C:\Users\jessi\Desktop\Demo\src\test\resources\excelFiles\report.xlsx
+Cleaning up unclosed ZipFile for archive C:\Users\jessi\Desktop\Demo\src\test\resources\excelFiles\report.xlsx
+Cleaning up unclosed ZipFile for archive C:\Users\jessi\Desktop\Demo\src\test\resources\excelFiles\report.xlsx
+]]></system-err>
+</testsuite>

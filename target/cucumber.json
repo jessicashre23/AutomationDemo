@@ -1,0 +1,518 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-14T21:15:20.306Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7429349600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "login.step.LoginStep.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "test invalid username and password",
+        "description": "",
+        "id": "check-login-modules;test-invalid-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19972600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I go to login page",
+            "match": {
+              "location": "login.step.LoginStep.iGoToLoginPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1194069600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I submit incorrect username and password",
+            "match": {
+              "location": "login.step.LoginStep.iSubmitIncorrectUsernameAndPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat login.mapper.LoginMapper.setStatus(LoginMapper.java:52)\r\n\tat login.step.LoginStep.iShouldReceiveAnInvalidMessage(LoginStep.java:47)\r\n\tat ✽.I should receive an invalid message(file:///C:/Users/jessi/Desktop/Demo/src/test/resources/feature/01_Login.feature:7)\r\n",
+              "duration": 87732400,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I should receive an invalid message",
+            "match": {
+              "location": "login.step.LoginStep.iShouldReceiveAnInvalidMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-14T21:15:29.119Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1422900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "login.step.LoginStep.setup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "test reset button",
+        "description": "",
+        "id": "check-login-modules;test-reset-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5142600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I return back on login page",
+            "match": {
+              "location": "login.step.LoginStep.iReturnBackOnLoginPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}\n  (Session info: chrome\u003d83.0.4103.116): User or Password is not valid\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-FSDA013\u0027, ip: \u0027192.168.0.20\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\jessi\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52819}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 09675b13b960194ea1cd3b0f3c375950\n*** Element info: {Using\u003dname, value\u003duid}\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy23.sendKeys(Unknown Source)\r\n\tat login.page.LoginPage.wrongLogin(LoginPage.java:92)\r\n\tat login.step.LoginStep.iEnterIncorrectUsernameAndPassword(LoginStep.java:66)\r\n\tat ✽.I enter incorrect username and password(file:///C:/Users/jessi/Desktop/Demo/src/test/resources/feature/01_Login.feature:11)\r\n",
+              "duration": 50221300,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "I enter incorrect username and password",
+            "match": {
+              "location": "login.step.LoginStep.iEnterIncorrectUsernameAndPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2215600,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I click reset and return back to login page",
+            "match": {
+              "location": "login.step.LoginStep.iClickResetAndReturnBackToLoginPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-14T21:15:29.190Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "login.step.LoginStep.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "test valid username and password",
+        "description": "",
+        "id": "check-login-modules;test-valid-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8003200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I return back to login page",
+            "match": {
+              "location": "login.step.LoginStep.iReturnBackToLoginPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1860928600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I submit correct username and password",
+            "match": {
+              "location": "login.step.LoginStep.iSubmitCorrectUsernameAndPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 275030300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should go to homepage",
+            "match": {
+              "location": "login.step.LoginStep.iShouldGoToHomepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Check login modules",
+    "description": "  This feature file checks user authentication via login",
+    "id": "check-login-modules",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/01_Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-14T21:15:31.340Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "login.step.LoginStep.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "test reset button on customer add form",
+        "description": "",
+        "id": "add-new-customer;test-reset-button-on-customer-add-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4178700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on homepage",
+            "match": {
+              "location": "customer.step.NewCustomerStep.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 375332500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on new customer menu",
+            "match": {
+              "location": "customer.step.NewCustomerStep.iClickOnNewCustomerMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 913045000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill up fields in the customer form",
+            "match": {
+              "location": "customer.step.NewCustomerStep.iFillUpFieldsInTheCustomerForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68435400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on reset button",
+            "match": {
+              "location": "customer.step.NewCustomerStep.iClickOnResetButton()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-14T21:15:32.708Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "login.step.LoginStep.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "fill up new customer form",
+        "description": "",
+        "id": "add-new-customer;fill-up-new-customer-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4996100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am back add customer form page",
+            "match": {
+              "location": "customer.step.NewCustomerStep.iAmBackAddCustomerFormPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 622556700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I fill up all the fields in the form",
+            "match": {
+              "location": "customer.step.NewCustomerStep.iFillUpAllTheFieldsInTheForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2037632600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on submit",
+            "match": {
+              "location": "customer.step.NewCustomerStep.iClickOnSubmit()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add new customer",
+    "description": "  this feature file enters new customer form and fills it",
+    "id": "add-new-customer",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/02_NewCustomer.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-14T21:15:35.384Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "login.step.LoginStep.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "edit customer",
+        "description": "",
+        "id": "edit-and-delete-existing-customer;edit-customer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 547877000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on edit customer",
+            "match": {
+              "location": "customer.step.EditCustomerStep.iClickOnEditCustomer()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 718245300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter Customer ID and submit",
+            "match": {
+              "location": "customer.step.EditCustomerStep.iEnterCustomerIDAndSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1911602900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Form appears where I edit and submit",
+            "match": {
+              "location": "customer.step.EditCustomerStep.formAppearsWhereIEditAndSubmit()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-14T21:15:38.574Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "login.step.LoginStep.setup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Delete existing customer",
+        "description": "",
+        "id": "edit-and-delete-existing-customer;delete-existing-customer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 366992500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on delete customer",
+            "match": {
+              "location": "customer.step.EditCustomerStep.iClickOnDeleteCustomer()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 170193000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I submit customer ID",
+            "match": {
+              "location": "customer.step.EditCustomerStep.iSubmitCustomerID()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 268161600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I accept confirmation to delete customer",
+            "match": {
+              "location": "customer.step.EditCustomerStep.iAcceptConfirmationToDeleteCustomer()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "edit and delete existing customer",
+    "description": "  this feature brings up the form to edit existing customer",
+    "id": "edit-and-delete-existing-customer",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/03_EditCustomer.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-14T21:15:39.387Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "login.step.LoginStep.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "log out of the site",
+        "description": "",
+        "id": "logout-of-site;log-out-of-the-site",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 248705100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am in homepage",
+            "match": {
+              "location": "login.step.LogoutStep.iAmInHomepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 432920900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on logout",
+            "match": {
+              "location": "login.step.LogoutStep.iClickOnLogout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57252500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I get logout message",
+            "match": {
+              "location": "login.step.LogoutStep.iGetLogoutMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Logout of site",
+    "description": "  this feature log out the user",
+    "id": "logout-of-site",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/04_Logout.feature",
+    "tags": []
+  }
+]

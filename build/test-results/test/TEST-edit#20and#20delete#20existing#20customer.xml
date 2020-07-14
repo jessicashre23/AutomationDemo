@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edit and delete existing customer" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-07-14T21:15:35" hostname="DESKTOP-FSDA013" time="4.008">
+  <properties/>
+  <testcase name="edit customer" classname="edit and delete existing customer" time="3.191"/>
+  <testcase name="Delete existing customer" classname="edit and delete existing customer" time="0.817"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
